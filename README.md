@@ -12,7 +12,7 @@ CornerWheel is a free, native macOS window switcher built with Swift, AppKit and
 - Per-window identity and observed most-recently-used ordering, frozen while browsing.
 - Continuous wheel/trackpad browsing; upright rectangular cards along a quarter-circle arc.
 - Click to activate the selected window, with Accessibility validation and an error when the operation cannot be completed.
-- Right-click or Control-click a card for **Show Window**, **Minimize Window** / **Restore Window**, and **Close Window**. These development changes are not in the existing build 6 download. The target app handles save confirmations. VoiceOver exposes minimize/restore and close actions.
+- Right-click or Control-click a card for **Show Window**, **Minimize Window** / **Restore Window**, and **Close Window**. The target app handles save confirmations. VoiceOver exposes minimize/restore and close actions.
 - Pointer-leave dismissal with the existing grace period; Escape and empty-area dismissal. After dismissal with the pointer still inside, re-entry protection keeps the wheel hidden until it leaves the interaction area and returns; an outside dismissal permits a direct return.
 - Configurable detection area, card size, hover delay, scroll direction/sensitivity, excluded apps, minimized windows, appearance and launch at login.
 - Existing menu-bar controls and optional Sparkle updates. CornerWheel has no Dock icon and does not replace or reconfigure the Dock.
@@ -27,14 +27,14 @@ CornerWheel is a free, native macOS window switcher built with Swift, AppKit and
 
 Sparkle **2.10.1** is the only Swift package. Its exact version is declared in `project.yml` and recorded in `CornerWheel.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved`. Keep the lockfile committed.
 
-## Install the existing binary
+## Install the release
 
-The existing [CornerWheel 1.1 build 6 ZIP for Apple silicon](https://updates.cornerwheel.com/CornerWheel-1.1-6-arm64.zip) and [update feed](https://updates.cornerwheel.com/appcast.xml) were reachable on November 12, 2026. The feed identifies macOS 14.0 and arm64 requirements. Download reachability was checked; a fresh installation and notarization of those hosted bytes were not repeated during this preparation.
+Download [CornerWheel 1.1 build 7 for Apple silicon](https://updates.cornerwheel.com/CornerWheel-1.1-7-arm64.zip), requiring **macOS 14.0 or later**. The app is signed with Developer ID and notarized by Apple. This release was built from [source commit 01fed513](https://github.com/QUIPXI/CornerWheel/commit/01fed513996238a209764ba0c4a5881d72ecd90b); the app's existing updater uses the [update feed](https://updates.cornerwheel.com/appcast.xml). Fresh-account installation and a real two-version Sparkle update have not been verified for this release.
 
 
-Download and expand the ZIP, move `CornerWheel.app` to Applications, and open it. Follow Settings to approve Accessibility, then return and recheck permission. macOS may require an app restart. If macOS rejects the app, use the troubleshooting guidance below; do not disable security protections. This existing download predates the local release-preparation work and is not a binary of this checkout.
+Download and expand the ZIP, move `CornerWheel.app` to Applications, and open it. Follow Settings to approve Accessibility, then return and recheck permission. macOS may require an app restart. If macOS rejects the app, use the troubleshooting guidance below; do not disable security protections.
 
-There is no documented Homebrew package or App Store installation route. Building from source is the way to try the current changes.
+There is no documented Homebrew package or App Store installation route. Build from source to inspect or modify the app.
 
 ## Build from a checkout
 
