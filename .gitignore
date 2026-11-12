@@ -1,0 +1,34 @@
+.build/
+*.xcuserstate
+xcuserdata/
+.DS_Store
+Build/
+__pycache__/
+*.pyc
+
+# The website has its own repository and remote backup.
+/Website/
+DerivedData/
+*.xcresult/
+.env
+.env.*
+.dev.vars
+.dev.vars.*
+.wrangler/
+# Local signing material and exported credential stores must stay out of Git.
+*.p12
+*.pfx
+*.p8
+*.key
+*.mobileprovision
+*.provisionprofile
+*.cer
+*.pem
+*.keychain
+*.keychain-db
+
+# Maintainer-specific release settings and generated archives.
+/Scripts/release.local.env
+*.xcarchive/
+*.dSYM/
+

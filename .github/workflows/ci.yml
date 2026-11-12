@@ -1,0 +1,48 @@
+name: macOS build and tests
+
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    runs-on: macos-15
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Record toolchain
+        run: |
+          xcodebuild -version
+          xcrun swiftc --version
+          python3 --version
+      - name: Build the development app
+        run: >-
+          xcodebuild -project CornerWheel.xcodeproj -scheme CornerWheel
+          -configuration Debug -destination 'platform=macOS'
+          -derivedDataPath Build/DerivedData
+          -onlyUsePackageVersionsFromResolvedFile
+          CODE_SIGN_IDENTITY=- DEVELOPMENT_TEAM= build
+      - name: Run native tests
+        run: >-
+          xcodebuild -project CornerWheel.xcodeproj -scheme CornerWheel
+          -configuration Debug -destination 'platform=macOS'
+          -derivedDataPath Build/DerivedData
+          -onlyUsePackageVersionsFromResolvedFile
+          -parallel-testing-enabled NO
+          CODE_SIGN_IDENTITY=- DEVELOPMENT_TEAM= test
+      - name: Check release tools
+        run: |
+          python3 -m unittest discover -s Tests/ReleaseTools -v
+          bash -n Scripts/prepare_release.sh Scripts/build_update.sh Scripts/release.env
+      - name: Verify dependency lockfile stayed unchanged
+        run: git diff --exit-code -- CornerWheel.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved

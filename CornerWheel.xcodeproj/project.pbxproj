@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0333E44DD70CF033C2140445 /* CornerWheelCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942AD8E731A31D8A8C4C6EC6 /* CornerWheelCoordinator.swift */; };
+		0C80FEAB0826A7C54459A82A /* DisplayGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0E2AFC91FD85F2CD951113 /* DisplayGeometry.swift */; };
+		1BF5DB9778174EE797C5208B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 38B4BCB5D18BE2701761C607 /* LICENSE */; };
+		27CDD3724299AF1E3544583A /* CornerWheelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81C452952E6E4C8F869B330 /* CornerWheelApp.swift */; };
+		35F07F6365BEFD643E40E681 /* OverlayOptimizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4784DCAB089530E4F8667AE /* OverlayOptimizationTests.swift */; };
+		3CDE44B990FDDC5DF1B4B40A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8C003246071E795939F445 /* Assets.xcassets */; };
+		415EE0392A8C26E527AEDCEA /* CarouselController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3607B35FA190B3F833D2C1 /* CarouselController.swift */; };
+		4510F06DA495D1086C92986F /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA7774D614C29C8CE1300D9 /* OverlayView.swift */; };
+		4FA46AAA1E57945B0148E2BC /* UpdateConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2895FCA8557A87FD0861640 /* UpdateConfigurationTests.swift */; };
+		55D6195AFDF749E5258A23B8 /* DefaultSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA2DBBE566E471F6D190C93 /* DefaultSlider.swift */; };
+		6272121D7617A14EB628FD3A /* CoordinatorLifecycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0781D9A1A735B6764757CC /* CoordinatorLifecycleTests.swift */; };
+		6EDAC30936489F1DA566D657 /* MRUTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F28F201BC19FC238ECDED /* MRUTracker.swift */; };
+		75D36DAA57F24898DE44647E /* WindowCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C33290540BFDA5758F749F /* WindowCatalog.swift */; };
+		77798B0B00BF355B700FD87E /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5DBE197EDFF37A05604903 /* SettingsStore.swift */; };
+		83727E7956BC2902D97775EB /* CornerTriggerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7249FC15CD13AB50D9DA2E85 /* CornerTriggerController.swift */; };
+		8ED796DAB19F5D5E1E26C534 /* WindowModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C876023CEC8AE606BAEA93E /* WindowModels.swift */; };
+		916B9273EE32D4114A20D97E /* AboutCornerWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483DF76AE30A671D5B3079E4 /* AboutCornerWheelView.swift */; };
+		95DA319C9EA60FC75B140672 /* ArcLayoutEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724933D081BD6667A990FF6F /* ArcLayoutEngine.swift */; };
+		9E2D9BCF66A80FEBFDCE92D4 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 8F4A578EA5343B0866597A79 /* Sparkle */; };
+		A2C13AEE3E5C9B360388AD13 /* AppUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EA9C62873CFDE7BDB01971 /* AppUpdateController.swift */; };
+		AA834A69D6DAF8EA99BED0EA /* SettingsAndTriggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C701318ED6A7BA9D4C25C82 /* SettingsAndTriggerTests.swift */; };
+		AB24A7D94DBCA85CC2467C52 /* OverlayPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3980D2823A8D463D507F1 /* OverlayPanelController.swift */; };
+		AEE98EDD5DBEF56BA6826180 /* CarouselAndMRUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE30B5A6A6B5923A8D8D05 /* CarouselAndMRUTests.swift */; };
+		DD77627788E91ACF0F4F258F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EA68BF2F5701BED62E7BE /* SettingsView.swift */; };
+		DE9BB6746F12C76894E862F3 /* WindowActivationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4BC590EC580135CD47DA2 /* WindowActivationService.swift */; };
+		DE9FED7775FE2821A512733B /* ArcLayoutEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD8F84CBD04F3FDF3FEC013 /* ArcLayoutEngineTests.swift */; };
+		E0421F89F62482C12A54AD2B /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2F290156AB3A16311089E0 /* PermissionManager.swift */; };
+		E074811023E9C5E3D2F9685E /* AXWindowEligibilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56BEC99D7DDB1D4FB42E95 /* AXWindowEligibilityTests.swift */; };
+		E355A2ADAFC1552D7BC18538 /* AccessibilityWindowStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDF2B57875DC1AE55277517 /* AccessibilityWindowStore.swift */; };
+		F4BAF53EAC72EECE5D66862E /* ThirdPartyNotices.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6F0F4B6AB34349CCA0702280 /* ThirdPartyNotices.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		016A0B5B7FC31A29EA9F523F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E775824509A0DA0E5EB7899B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEB8780743BD85DE46CD4FD6;
+			remoteInfo = CornerWheel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		014F28F201BC19FC238ECDED /* MRUTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRUTracker.swift; sourceTree = "<group>"; };
+		0EDF2B57875DC1AE55277517 /* AccessibilityWindowStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityWindowStore.swift; sourceTree = "<group>"; };
+		1A0781D9A1A735B6764757CC /* CoordinatorLifecycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorLifecycleTests.swift; sourceTree = "<group>"; };
+		1E5DBE197EDFF37A05604903 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		22C33290540BFDA5758F749F /* WindowCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowCatalog.swift; sourceTree = "<group>"; };
+		28FE30B5A6A6B5923A8D8D05 /* CarouselAndMRUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselAndMRUTests.swift; sourceTree = "<group>"; };
+		2C56BEC99D7DDB1D4FB42E95 /* AXWindowEligibilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AXWindowEligibilityTests.swift; sourceTree = "<group>"; };
+		2CA4BC590EC580135CD47DA2 /* WindowActivationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowActivationService.swift; sourceTree = "<group>"; };
+		364EA68BF2F5701BED62E7BE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		38B4BCB5D18BE2701761C607 /* LICENSE */ = {isa = PBXFileReference; path = LICENSE; sourceTree = "<group>"; };
+		483DF76AE30A671D5B3079E4 /* AboutCornerWheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCornerWheelView.swift; sourceTree = "<group>"; };
+		5CA3980D2823A8D463D507F1 /* OverlayPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPanelController.swift; sourceTree = "<group>"; };
+		62EA9C62873CFDE7BDB01971 /* AppUpdateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdateController.swift; sourceTree = "<group>"; };
+		6F0F4B6AB34349CCA0702280 /* ThirdPartyNotices.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ThirdPartyNotices.txt; sourceTree = "<group>"; };
+		724933D081BD6667A990FF6F /* ArcLayoutEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcLayoutEngine.swift; sourceTree = "<group>"; };
+		7249FC15CD13AB50D9DA2E85 /* CornerTriggerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerTriggerController.swift; sourceTree = "<group>"; };
+		8C876023CEC8AE606BAEA93E /* WindowModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowModels.swift; sourceTree = "<group>"; };
+		942AD8E731A31D8A8C4C6EC6 /* CornerWheelCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerWheelCoordinator.swift; sourceTree = "<group>"; };
+		9C701318ED6A7BA9D4C25C82 /* SettingsAndTriggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAndTriggerTests.swift; sourceTree = "<group>"; };
+		A2895FCA8557A87FD0861640 /* UpdateConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateConfigurationTests.swift; sourceTree = "<group>"; };
+		AA2F290156AB3A16311089E0 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		AB0E2AFC91FD85F2CD951113 /* DisplayGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayGeometry.swift; sourceTree = "<group>"; };
+		B4784DCAB089530E4F8667AE /* OverlayOptimizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayOptimizationTests.swift; sourceTree = "<group>"; };
+		CCA2DBBE566E471F6D190C93 /* DefaultSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSlider.swift; sourceTree = "<group>"; };
+		CCA7774D614C29C8CE1300D9 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		CE8C003246071E795939F445 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D122233CB6F2D4C3553560FD /* CornerWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CornerWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD3607B35FA190B3F833D2C1 /* CarouselController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselController.swift; sourceTree = "<group>"; };
+		E81C452952E6E4C8F869B330 /* CornerWheelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerWheelApp.swift; sourceTree = "<group>"; };
+		FB9FAD9B31A89937DB372D31 /* CornerWheelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CornerWheelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD8F84CBD04F3FDF3FEC013 /* ArcLayoutEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcLayoutEngineTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A469E79EB5EFD36BC5959390 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E2D9BCF66A80FEBFDCE92D4 /* Sparkle in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08E60D8CD8DD8748550EF863 /* CornerWheelTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFD8F84CBD04F3FDF3FEC013 /* ArcLayoutEngineTests.swift */,
+				2C56BEC99D7DDB1D4FB42E95 /* AXWindowEligibilityTests.swift */,
+				28FE30B5A6A6B5923A8D8D05 /* CarouselAndMRUTests.swift */,
+				1A0781D9A1A735B6764757CC /* CoordinatorLifecycleTests.swift */,
+				B4784DCAB089530E4F8667AE /* OverlayOptimizationTests.swift */,
+				9C701318ED6A7BA9D4C25C82 /* SettingsAndTriggerTests.swift */,
+				A2895FCA8557A87FD0861640 /* UpdateConfigurationTests.swift */,
+			);
+			path = CornerWheelTests;
+			sourceTree = "<group>";
+		};
+		109D8C794B9D6DA27D312AF1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				724933D081BD6667A990FF6F /* ArcLayoutEngine.swift */,
+				DD3607B35FA190B3F833D2C1 /* CarouselController.swift */,
+				AB0E2AFC91FD85F2CD951113 /* DisplayGeometry.swift */,
+				014F28F201BC19FC238ECDED /* MRUTracker.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2B673EB890CEC7B83474B070 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0EDF2B57875DC1AE55277517 /* AccessibilityWindowStore.swift */,
+				62EA9C62873CFDE7BDB01971 /* AppUpdateController.swift */,
+				AA2F290156AB3A16311089E0 /* PermissionManager.swift */,
+				2CA4BC590EC580135CD47DA2 /* WindowActivationService.swift */,
+				22C33290540BFDA5758F749F /* WindowCatalog.swift */,
+				8C876023CEC8AE606BAEA93E /* WindowModels.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5AD38DC32F977D297F011A3C = {
+			isa = PBXGroup;
+			children = (
+				38B4BCB5D18BE2701761C607 /* LICENSE */,
+				CA299528A4C375DB92CE31AE /* Resources */,
+				69517AD64C21DC2AEB15D314 /* Sources */,
+				C8359B94D900CDE79E494637 /* Tests */,
+				8A790CD76E1552F383A849C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69517AD64C21DC2AEB15D314 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CDEAE9E0984C3E095691C36B /* CornerWheel */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8A790CD76E1552F383A849C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D122233CB6F2D4C3553560FD /* CornerWheel.app */,
+				FB9FAD9B31A89937DB372D31 /* CornerWheelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CBBD93987E9025B63DB8162 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7249FC15CD13AB50D9DA2E85 /* CornerTriggerController.swift */,
+				E81C452952E6E4C8F869B330 /* CornerWheelApp.swift */,
+				942AD8E731A31D8A8C4C6EC6 /* CornerWheelCoordinator.swift */,
+				1E5DBE197EDFF37A05604903 /* SettingsStore.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C8359B94D900CDE79E494637 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				08E60D8CD8DD8748550EF863 /* CornerWheelTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		CA299528A4C375DB92CE31AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE8C003246071E795939F445 /* Assets.xcassets */,
+				6F0F4B6AB34349CCA0702280 /* ThirdPartyNotices.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CDEAE9E0984C3E095691C36B /* CornerWheel */ = {
+			isa = PBXGroup;
+			children = (
+				8CBBD93987E9025B63DB8162 /* App */,
+				109D8C794B9D6DA27D312AF1 /* Core */,
+				2B673EB890CEC7B83474B070 /* Services */,
+				EE4E0E2EB9492A968795BCE2 /* UI */,
+			);
+			path = CornerWheel;
+			sourceTree = "<group>";
+		};
+		EE4E0E2EB9492A968795BCE2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				483DF76AE30A671D5B3079E4 /* AboutCornerWheelView.swift */,
+				CCA2DBBE566E471F6D190C93 /* DefaultSlider.swift */,
+				5CA3980D2823A8D463D507F1 /* OverlayPanelController.swift */,
+				CCA7774D614C29C8CE1300D9 /* OverlayView.swift */,
+				364EA68BF2F5701BED62E7BE /* SettingsView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		716C1D7E5D555686AB4BCD59 /* CornerWheelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A5AE4C3C7A453CB47F805A9 /* Build configuration list for PBXNativeTarget "CornerWheelTests" */;
+			buildPhases = (
+				EBF1FAA1D60F6E245FCEFBF2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				891D743BF86D5A47067B0912 /* PBXTargetDependency */,
+			);
+			name = CornerWheelTests;
+			packageProductDependencies = (
+			);
+			productName = CornerWheelTests;
+			productReference = FB9FAD9B31A89937DB372D31 /* CornerWheelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BEB8780743BD85DE46CD4FD6 /* CornerWheel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30854E3493C35980F7688BD6 /* Build configuration list for PBXNativeTarget "CornerWheel" */;
+			buildPhases = (
+				CE89866885B6012B0CB53962 /* Sources */,
+				9476F43675890179673120E4 /* Resources */,
+				A469E79EB5EFD36BC5959390 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CornerWheel;
+			packageProductDependencies = (
+				8F4A578EA5343B0866597A79 /* Sparkle */,
+			);
+			productName = CornerWheel;
+			productReference = D122233CB6F2D4C3553560FD /* CornerWheel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E775824509A0DA0E5EB7899B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					716C1D7E5D555686AB4BCD59 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					BEB8780743BD85DE46CD4FD6 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 5E9333B4F259FFA6A5BD3D06 /* Build configuration list for PBXProject "CornerWheel" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5AD38DC32F977D297F011A3C;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7FC92013E1997F3464098286 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8A790CD76E1552F383A849C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEB8780743BD85DE46CD4FD6 /* CornerWheel */,
+				716C1D7E5D555686AB4BCD59 /* CornerWheelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9476F43675890179673120E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CDE44B990FDDC5DF1B4B40A /* Assets.xcassets in Resources */,
+				1BF5DB9778174EE797C5208B /* LICENSE in Resources */,
+				F4BAF53EAC72EECE5D66862E /* ThirdPartyNotices.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE89866885B6012B0CB53962 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916B9273EE32D4114A20D97E /* AboutCornerWheelView.swift in Sources */,
+				E355A2ADAFC1552D7BC18538 /* AccessibilityWindowStore.swift in Sources */,
+				A2C13AEE3E5C9B360388AD13 /* AppUpdateController.swift in Sources */,
+				95DA319C9EA60FC75B140672 /* ArcLayoutEngine.swift in Sources */,
+				415EE0392A8C26E527AEDCEA /* CarouselController.swift in Sources */,
+				83727E7956BC2902D97775EB /* CornerTriggerController.swift in Sources */,
+				27CDD3724299AF1E3544583A /* CornerWheelApp.swift in Sources */,
+				0333E44DD70CF033C2140445 /* CornerWheelCoordinator.swift in Sources */,
+				55D6195AFDF749E5258A23B8 /* DefaultSlider.swift in Sources */,
+				0C80FEAB0826A7C54459A82A /* DisplayGeometry.swift in Sources */,
+				6EDAC30936489F1DA566D657 /* MRUTracker.swift in Sources */,
+				AB24A7D94DBCA85CC2467C52 /* OverlayPanelController.swift in Sources */,
+				4510F06DA495D1086C92986F /* OverlayView.swift in Sources */,
+				E0421F89F62482C12A54AD2B /* PermissionManager.swift in Sources */,
+				77798B0B00BF355B700FD87E /* SettingsStore.swift in Sources */,
+				DD77627788E91ACF0F4F258F /* SettingsView.swift in Sources */,
+				DE9BB6746F12C76894E862F3 /* WindowActivationService.swift in Sources */,
+				75D36DAA57F24898DE44647E /* WindowCatalog.swift in Sources */,
+				8ED796DAB19F5D5E1E26C534 /* WindowModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF1FAA1D60F6E245FCEFBF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E074811023E9C5E3D2F9685E /* AXWindowEligibilityTests.swift in Sources */,
+				DE9FED7775FE2821A512733B /* ArcLayoutEngineTests.swift in Sources */,
+				AEE98EDD5DBEF56BA6826180 /* CarouselAndMRUTests.swift in Sources */,
+				6272121D7617A14EB628FD3A /* CoordinatorLifecycleTests.swift in Sources */,
+				35F07F6365BEFD643E40E681 /* OverlayOptimizationTests.swift in Sources */,
+				AA834A69D6DAF8EA99BED0EA /* SettingsAndTriggerTests.swift in Sources */,
+				4FA46AAA1E57945B0148E2BC /* UpdateConfigurationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		891D743BF86D5A47067B0912 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEB8780743BD85DE46CD4FD6 /* CornerWheel */;
+			targetProxy = 016A0B5B7FC31A29EA9F523F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0590B72925D5B2840FD16E15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Resources/Debug.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LS_APPLICATION_CATEGORY_TYPE = "public.app-category.productivity";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cornerwheel.CornerWheel;
+				PRODUCT_NAME = CornerWheel;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		17A55D7A31B1A87DCBB61695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CORNERWHEEL_SOURCE_REVISION = "unversioned-development";
+				CORNERWHEEL_UPDATE_FEED_URL = "";
+				CORNERWHEEL_UPDATE_PUBLIC_KEY = "GI7LEWXfjcHWclVAPX2oDYJ5QUefPml+ozHhmpjPdO0=";
+				CURRENT_PROJECT_VERSION = 6;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		218D9730D8F7678A2E297EF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CORNERWHEEL_SOURCE_REVISION = "unversioned-development";
+				CORNERWHEEL_UPDATE_FEED_URL = "https://updates.cornerwheel.com/appcast.xml";
+				CORNERWHEEL_UPDATE_PUBLIC_KEY = "GI7LEWXfjcHWclVAPX2oDYJ5QUefPml+ozHhmpjPdO0=";
+				CURRENT_PROJECT_VERSION = 6;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2F80C78E15A946865940CC24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cornerwheel.CornerWheelTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CornerWheel.app/Contents/MacOS/CornerWheel";
+			};
+			name = Debug;
+		};
+		60972B40BF77E29FCD302390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cornerwheel.CornerWheelTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CornerWheel.app/Contents/MacOS/CornerWheel";
+			};
+			name = Release;
+		};
+		9769D4A8356E86D107D38DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LS_APPLICATION_CATEGORY_TYPE = "public.app-category.productivity";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cornerwheel.CornerWheel;
+				PRODUCT_NAME = CornerWheel;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A5AE4C3C7A453CB47F805A9 /* Build configuration list for PBXNativeTarget "CornerWheelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F80C78E15A946865940CC24 /* Debug */,
+				60972B40BF77E29FCD302390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		30854E3493C35980F7688BD6 /* Build configuration list for PBXNativeTarget "CornerWheel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0590B72925D5B2840FD16E15 /* Debug */,
+				9769D4A8356E86D107D38DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5E9333B4F259FFA6A5BD3D06 /* Build configuration list for PBXProject "CornerWheel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17A55D7A31B1A87DCBB61695 /* Debug */,
+				218D9730D8F7678A2E297EF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7FC92013E1997F3464098286 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = exactVersion;
+				version = 2.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F4A578EA5343B0866597A79 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7FC92013E1997F3464098286 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E775824509A0DA0E5EB7899B /* Project object */;
+}
