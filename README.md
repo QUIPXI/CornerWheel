@@ -20,7 +20,7 @@ CornerWheel is a free, native macOS window switcher built with Swift, AppKit and
 ## Requirements
 
 - **macOS 14.0 or later**, as declared by the app target and release feed.
-- The existing distributed ZIP is **Apple silicon (arm64)**. Intel source builds and execution have not been verified for this preparation.
+- The distributed app is **Apple silicon (arm64)**. Intel source builds and execution have not been verified for this preparation.
 - **Accessibility permission** for window discovery and user-selected actions. Screen Recording is neither requested nor used by the current implementation.
 - To build: full **Xcode** with a macOS SDK, Git, and network access for the pinned Swift package. This preparation uses Xcode 27.0 / Swift 6.4 in the project's Swift 5 language mode. Older Xcode versions have not been validated here.
 - **Python 3.11.8 or later** for release-tool tests and helpers. **XcodeGen 2.45.3 or later** is needed only to regenerate the checked-in project after changing `project.yml` or its source list.
@@ -29,10 +29,12 @@ Sparkle **2.10.1** is the only Swift package. Its exact version is declared in `
 
 ## Install the release
 
-Download [CornerWheel 1.1 build 7 for Apple silicon](https://updates.cornerwheel.com/CornerWheel-1.1-7-arm64.zip), requiring **macOS 14.0 or later**. The app is signed with Developer ID and notarized by Apple. This release was built from [source commit 01fed513](https://github.com/QUIPXI/CornerWheel/commit/01fed513996238a209764ba0c4a5881d72ecd90b); the app's existing updater uses the [update feed](https://updates.cornerwheel.com/appcast.xml). Fresh-account installation and a real two-version Sparkle update have not been verified for this release.
+Download the [CornerWheel 1.1 build 7 DMG for Apple silicon](https://updates.cornerwheel.com/CornerWheel-1.1-7-arm64.dmg), requiring **macOS 14.0 or later**. The app is signed with Developer ID and notarized by Apple. This release was built from [source commit 01fed513](https://github.com/QUIPXI/CornerWheel/commit/01fed513996238a209764ba0c4a5881d72ecd90b); the app's existing updater uses the [update feed](https://updates.cornerwheel.com/appcast.xml). Fresh-account installation and a real two-version Sparkle update have not been verified for this release.
 
 
-Download and expand the ZIP, move `CornerWheel.app` to Applications, and open it. Follow Settings to approve Accessibility, then return and recheck permission. macOS may require an app restart. If macOS rejects the app, use the troubleshooting guidance below; do not disable security protections.
+Open the DMG and drag `CornerWheel.app` onto its Applications shortcut. Eject the disk image, then open CornerWheel from Applications. Follow Settings to approve Accessibility, then return and recheck permission. macOS may require an app restart. If macOS rejects the app, use the troubleshooting guidance below; do not disable security protections.
+
+The DMG contains the same signed app as the [ZIP used by automatic updates](https://updates.cornerwheel.com/CornerWheel-1.1-7-arm64.zip). Both the app and DMG are signed with Developer ID and notarized by Apple.
 
 There is no documented Homebrew package or App Store installation route. Build from source to inspect or modify the app.
 
